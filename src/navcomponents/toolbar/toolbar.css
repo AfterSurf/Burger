@@ -1,0 +1,65 @@
+.toolbar {
+    position: fixed; /* es soll ja fest stehen */
+    top: 0;
+    left: 0; 
+    width: 100%;
+    background-color: #ff0000; 
+    height: 56px;
+}
+
+.toolbar-logo {
+    margin-left: 1rem; 
+}
+
+.toolbar-logo a {
+    color: blue; 
+    text-decoration: none;
+    font-size: 1.5rem; 
+}
+
+.toolbar-navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem; 
+}
+
+.toolbar-navigationItems a {
+    color: black;
+    text-decoration: none; 
+}
+
+.toolbar-navigationItems ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.toolbar-navigationItems li {
+    padding: 0 0.5rem; 
+}
+
+.spacer {flex:1}
+
+/* Hoover etc. */
+.toolbar-navigationItems a:hover, .toolbar-navigationItems a:active {
+    color:orange;
+}
+
+/* mediaQueries */
+
+@media (max-width: 760px) {
+    .toolbar-navigationItems {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .toolbar-toogle-buttom {
+        display: none; 
+    }
+    .toolbar-logo {
+        margin-left: 0;
+    }
+}

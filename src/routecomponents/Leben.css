@@ -1,0 +1,13 @@
+
+   
+   .picture {
+    padding-left: 35%;
+    padding-right: 35%;
+
+    display: flex;
+    flex: 1;
+    align-self: stretch;
+    width: null;
+    max-width: 100%;
+
+    }
